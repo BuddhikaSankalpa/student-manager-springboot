@@ -1,16 +1,16 @@
 package com.example.student_manager.model;
   
-import jakarta.persistence.Column; 
-import jakarta.persistence.Entity; 
-import jakarta.persistence.GeneratedValue; 
-import jakarta.persistence.GenerationType; 
-import jakarta.persistence.Id; 
-import jakarta.persistence.Table; 
-import jakarta.validation.constraints.Email; 
-import jakarta.validation.constraints.Max; 
-import jakarta.validation.constraints.Min; 
-import jakarta.validation.constraints.NotBlank; 
-import jakarta.validation.constraints.NotNull; 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern; 
 import jakarta.validation.constraints.Size; 
   
@@ -37,8 +37,6 @@ public class Student {
   
     @NotBlank(message = "Please select a course") 
     private String course; 
-  
-9 
  
     @NotNull(message = "Age is required") 
     @Min(value = 15, message = "Age must be at least 15") 
